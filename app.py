@@ -149,7 +149,7 @@ collate = Collater(pad_value=0, pad_to_multiple=1)
 
 
 AUDIO_SAMPLE_RATE = 16000
-MAX_INPUT_AUDIO_LENGTH = 10  # in seconds
+MAX_INPUT_AUDIO_LENGTH = 120  # in seconds
 
 
 def remove_prosody_tokens_from_text(text):
@@ -234,10 +234,11 @@ TARGET_LANGUAGE_NAMES = [
 ]
 
 UPDATED_LANGUAGE_LIST = {
-    "English": ["French", "German", "Spanish"],
-    "French": ["English", "German", "Spanish"],
-    "German": ["English", "French", "Spanish"],
-    "Spanish": ["English", "French", "German"],
+    "English": ["French", "German", "Spanish", "Egyptian Arabic"],
+    "French": ["English", "German", "Spanish", "Egyptian Arabic"],
+    "German": ["English", "French", "Spanish", "Egyptian Arabic"],
+    "Spanish": ["English", "French", "German","Egyptian Arabic"],
+    "Egyptian Arabic": ["English", "French", "German", "Spanish"],
 }
 
 def rs_change(rs):
